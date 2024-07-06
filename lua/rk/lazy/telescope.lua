@@ -25,9 +25,12 @@ return {
             local word = vim.fn.expand("<cWORD>")
             builtin.grep_string({ search = word })
         end)
-        vim.keymap.set('n', '<leader>pww', function()
+        vim.keymap.set('n', '<leader>pn', function()
             local word = vim.fn.expand("<cWORD>")
-            builtin.live_grep({ search = word, search_dirs= {"/mnt/e/notes/journals/", "/mnt/e/notes/pages/"}})
+            builtin.live_grep({ search = word, search_dirs= {
+                "/mnt/e/notes/journals/",
+                "/mnt/e/notes/pages/",
+            }})
         end)
         vim.keymap.set('n', '<leader>ps', function()
             builtin.grep_string({ search = vim.fn.input("Grep > ") })
