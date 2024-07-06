@@ -30,6 +30,7 @@ return {
             builtin.live_grep({ search = word, search_dirs= {
                 "/mnt/e/notes/journals/",
                 "/mnt/e/notes/pages/",
+                "/mnt/e/notes/index.md",
             }})
         end)
         vim.keymap.set('n', '<leader>ps', function()
