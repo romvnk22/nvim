@@ -49,14 +49,20 @@ vim.keymap.set(
 
 vim.keymap.set(
     "n",
-    "<leader>acc",
+    "<leader>ac",
     "ddO```<CR>```<Esc>P<Esc>kA"
 )
 
 vim.keymap.set(
     "v",
-    "<leader>acc",
+    "<leader>ac",
     "dO```<CR>```<Esc>P<Esc>kA"
+)
+
+vim.keymap.set(
+    "n",
+    "<leader>w",
+    "<cmd>Explore /mnt/e/notes/journals/<CR>"
 )
 
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
